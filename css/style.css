@@ -103,7 +103,7 @@ p {
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 1.9;
-    color: #999;
+    color: #000000;
 }
 
 ul,
@@ -672,40 +672,99 @@ a.reqe-button {
 }
 
 .banner-top {
+    position: relative;
+    /* Add any other styles for .banner-top3, like padding, margins, etc. */
+}
+
+.banner-top::before {
+    content: "";
     background: url(../images/tropical_oasis.png) no-repeat bottom;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
+    filter: contrast(50%);
 }
 
 .banner-top1 {
+    position: relative;
+    /* Add any other styles for .banner-top3, like padding, margins, etc. */
+}
+
+.banner-top1::before {
+    content: "";
     background: url(../images/3.jpg) no-repeat bottom;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
+    filter: contrast(50%);
 }
 
 .banner-top2 {
+    position: relative;
+    /* Add any other styles for .banner-top3, like padding, margins, etc. */
+}
+
+.banner-top2::before {
+    content: "";
     background: url(../images/1.jpg) no-repeat top;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
+    filter: contrast(50%);
 }
 
 .banner-top3 {
-    background: url(../images/wh3.png) no-repeat 0px 0px;
+    position: relative;
+    /* Add any other styles for .banner-top3, like padding, margins, etc. */
+}
+
+.banner-top3::before {
+    content: "";
+    background: url(../images/greenhouse3.png) no-repeat 0px 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
+
+    /* Apply the filter for contrast adjustment to the pseudo-element */
+    filter: contrast(50%); /* Adjust this value as needed; 100% is the original contrast */
 }
+
 
 .w3layouts-banner-info {
     padding-top: 17em;
@@ -718,7 +777,7 @@ a.reqe-button {
 }
 
 .w3layouts-banner-info p {
-    font-size: 15px;
+    font-size: 17px;
     max-width: 650px;
 }
 
@@ -834,7 +893,7 @@ ul.author li span {
 
 .services-w3ls-grid p {
     color: #fdfdfd;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .services-w3ls-grid i {
@@ -1065,7 +1124,7 @@ h5.card-title {
 }
 
 .blog_w3icon span {
-    color: #777;
+    color: #626262;
     text-transform: uppercase;
     font-size: 12px;
     word-spacing: 3px;
@@ -1455,7 +1514,7 @@ p.footer-para {
 
 @media(max-width: 991px) {
     h1.logo {
-        left: 11%;
+        left: 6%;
     }
 
     .w3layouts-banner-info h3 {
