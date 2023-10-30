@@ -1299,13 +1299,28 @@ h4.stat-text-wthree {
 
 /* footer */
 footer {
+    position: relative;
+
+}
+
+footer::before{
+    content: "";
+    position: absolute;
     background: url(../images/footer.jpg) no-repeat bottom;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
+    filter: contrast(135%);
 }
+
+
 
 p.footer-para {
     max-width: 650px;
@@ -1342,7 +1357,7 @@ p.footer-para {
 }
 
 .footercopy-social ul li a {
-    color: #333;
+    color: #000000;
     text-align: center;
 }
 
@@ -1384,12 +1399,12 @@ p.footer-para {
 
 /* address */
 .contact-left-footer ul li p i {
-    color: #101010;
+    color: #000000;
 }
 
 .contact-left-footer ul li p a,
 .contact-left-footer ul li p {
-    color: #807d7d;
+    color: #000000;
 }
 
 /* //address */
