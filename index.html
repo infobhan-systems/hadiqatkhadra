@@ -814,7 +814,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<!-- contact form grid -->
 					<fieldset class="contact-top1" data-blast="borderColor">
 						<legend class="text-wh let text-capitalize">send us a note</legend>
-						<form action="sendEmail.php" method="post" class="f-color" id="contactForm">
+						<form method="post" class="f-color" id="contactForm">
 							<div class="form-group">
 								<label for="contactusername">Name</label>
 								<input type="text" class="form-control" name="name" id="contactusername" required placeholder="Enter your name">
@@ -829,7 +829,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</div>
 							<button id="submit" type="submit" class="btn btn-block" data-blast="bgColor">
 								<!-- Loader -->
-								<div id="loader" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+								<div id="submitting" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
 									<div class="spinner-border text-white" role="status">
 									</div>
 								</div>
@@ -897,7 +897,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			$("#contactForm").submit(function(e){
 				e.preventDefault(); // Prevent the default form submission
 				// Show the loader
-                $("#loader").show();
+                $("#submitting").show();
 				// Disable submit button
 				$("#submit").prop('disabled', true);
 				// Perform AJAX request to send form data to sendEmail.php
@@ -909,7 +909,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						// Handle the response here (e.g., show a success message)
 						var status = JSON.parse(response).status
 						if (status === "success") {
-							$("#loader").hide();
+							$("#submitting").hide();
 							// Disable submit button
 							$("#submit").prop('disabled', false);
 							$("#responseAlert").html('<div class="alert alert-success">Thank you for visting our website, we will reach out soon.</div>');
