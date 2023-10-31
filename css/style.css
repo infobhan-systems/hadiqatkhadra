@@ -1306,7 +1306,7 @@ footer {
 footer::before{
     content: "";
     position: absolute;
-    background: url(../images/footer.jpg) no-repeat bottom;
+    background: #000 ; /*url(../images/footer.jpg) no-repeat bottom; */
     top: 0;
     right: 0;
     bottom: 0;
@@ -1317,7 +1317,7 @@ footer::before{
     -moz-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
-    filter: contrast(5%);
+    /*filter: contrast(5%); */
 }
 
 
