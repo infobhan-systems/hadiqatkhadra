@@ -130,6 +130,10 @@ a:hover {
 
 /* colors code */
 .text-da {
+    color: #1f1e1e;
+}
+
+footer .text-da {
     color: #fffbfb;
 }
 
