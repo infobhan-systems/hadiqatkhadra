@@ -101,19 +101,35 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="loader-content">
             <!-- Your Brand Logo -->
             <img src="./images/brand_name.png" alt="Your Logo">
-			<h4>Loading...</h4>
+			<!-- Bootstrap Progress Bar -->
+			<div class="progress" style="width: 100%;">
+				<div id="progress-bar" class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+			</div>
         </div>
     </div>
 
 	<script>
-		// Wait for the page to fully load
-		window.addEventListener("load", function () {
-			// Get the loading screen element
-			const loader = document.querySelector(".loader");
 
-			// Hide the loading screen
-			loader.style.display = "none";
-		});
+		 // Simulate loading progress
+	function simulateLoadingProgress() {
+        const progressBar = document.getElementById('progress-bar');
+        let width = 0;
+
+    const interval = setInterval(function () {
+            if (width >= 100) {
+                clearInterval(interval);
+                // Hide the loader after loading is complete
+                document.getElementById('loader').style.display = 'none';
+            } else {
+                width++;
+                progressBar.style.width = width + '%';
+                progressBar.setAttribute('aria-valuenow', width);
+            }
+        }, 20); // Update progress every 20ms, adjust timing as needed
+    	}
+
+		// Start simulation when the page starts loading
+		simulateLoadingProgress();
 	</script>
 
 	<div id="home">
@@ -174,6 +190,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				}
 			});
 		</script> -->
+		
 		<!-- banner -->
 		<div class="banner_w3lspvt">
 			<div class="csslider infinity" id="slider1">
