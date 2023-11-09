@@ -151,6 +151,7 @@ footer .text-da {
 
 .text-li {
     color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* This adds a font shadow */
 }
 
 .bg-li {
@@ -776,7 +777,7 @@ a.reqe-button {
 
 .w3layouts-banner-info h3 {
     font-size: 3.5em;
-    text-shadow: 3px 4px 6px rgba(45, 45, 45, 0.15);
+    text-shadow: 3px 4px 6px rgba(45, 45, 45, 45);
     font-weight: 600;
 }
 
