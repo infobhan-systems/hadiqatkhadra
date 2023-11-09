@@ -3,6 +3,8 @@ Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
+Customised: Ameen Abdulsalam
+Developer URL: http://ameen.click
 -->
 
 <!DOCTYPE html>
@@ -14,6 +16,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8" />
 	<meta name="keywords" content="hadiqatkhadra.com, hadiqatkhadra" />
+	<meta name="description" content="At Al Hadiqat Al Khadra, we are passionate about bringing the vibrant flavors and tropical beauty of the world right to your doorstep. Imagine walking through a lush garden teeming with over 1000 varieties of tropical fruit plants, each one a testament to nature's bounty and diversity. We invite you to embark on a delightful journey into the heart of tropical paradise." />
+	
+	<!--OG Tags-->
+	<meta property="og:title" content="AL HADIQAT ALKHADRA">
+	<meta property="og:description" content="At Al Hadiqat Al Khadra, we are passionate about bringing the vibrant flavors and tropical beauty of the world right to your doorstep.">
+	<meta property="og:image" content="./images/brand_name.png">
+	
 	<script>
 		addEventListener("load", function () {
 			setTimeout(hideURLbar, 0);
@@ -111,22 +120,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<script>
 
 		 // Simulate loading progress
-	function simulateLoadingProgress() {
-        const progressBar = document.getElementById('progress-bar');
-        let width = 0;
+		function simulateLoadingProgress() {
+			
+			const progressBar = document.getElementById('progress-bar');
+			let width = 0;
 
-    const interval = setInterval(function () {
-            if (width >= 100) {
-                clearInterval(interval);
-                // Hide the loader after loading is complete
-                document.getElementById('loader').style.display = 'none';
-            } else {
-                width++;
-                progressBar.style.width = width + '%';
-                progressBar.setAttribute('aria-valuenow', width);
-            }
-        }, 20); // Update progress every 20ms, adjust timing as needed
-    	}
+			const interval = setInterval(function () {
+					if (width >= 100) {
+						clearInterval(interval);
+						// Hide the loader after loading is complete
+						document.getElementById('loader').style.display = 'none';
+					} else {
+						width++;
+						progressBar.style.width = width + '%';
+						progressBar.setAttribute('aria-valuenow', width);
+					}
+				}, 20); // Update progress every 20ms, adjust timing as needed
+		}
 
 		// Start simulation when the page starts loading
 		simulateLoadingProgress();
@@ -159,12 +169,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<!-- First Tier Drop Down -->
 									<label for="drop-2" class="toggle toggle-drop">Pages <span class="fa fa-angle-down" aria-hidden="true"></span>
 									</label>
-									<a href="#">Pages <span class="fa fa-angle-down" aria-hidden="true"></span></a>
+									<a href="#">Products <span class="fa fa-angle-down" aria-hidden="true"></span></a>
 									<input type="checkbox" id="drop-2" />
 									<ul class="list-unstyled">
-										<li><a href="#why" class="drop-text">Why Choose Us</a></li>
-										<!-- <li class="my-2"><a href="#partners" class="drop-text">Our Partners</a></li> -->
-										</li>
+										<li><a href="#greenhouses" class="drop-text">Greenhouse</a></li>
+										<li><a href="#fruits" class="drop-text">Fruit Plants</a></li>
+										<li><a href="#indoor" class="drop-text">Indoor Plants</a></li>
+										<li><a href="#terrarium" class="drop-text">Terrarium</a></li>
+										<li><a href="#vivarium" class="drop-text">Vivariums & Paludarium</a></li>
+										<li><a href="#aquarium" class="drop-text">Aquarium</a></li>
 									</ul>
 								</li>
 								<li class="mr-0"><a href="#contact">Contact Us</a></li>
@@ -602,121 +615,221 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //testimonials -->
 
 	<!-- gallery -->
-	<section class="portfolio py-5" id="gallery">
-		<div class="container py-xl-5 py-lg-3">
-			<h3 class="w3ls-title text-center font-weight-bold mb-5"><span class="font-weight-light">Tropical</span> Plants</h3>
-			<div class="row pt-4">
-				<div class="col-md-3 gal-grid-wthree">
-					<div class="gallery-demo">
-						<a class="justify-content-center">
-							<img src="images/plant (1).png" alt=" " class="img-fluid" />
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3 gal-grid-wthree my-md-0 my-4">
-					<div class="gallery-demo">
-						<a  class="justify-content-center">
-							<img src="images/plant (2).png" alt=" " class="img-fluid" />
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3 gal-grid-wthree">
-					<div class="gallery-demo">
-						<a  class="justify-content-center">
-							<img src="images/plant (3).png" alt=" " class="img-fluid" />
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3 gal-grid-wthree mt-md-0 mt-4">
-					<div class="gallery-demo">
-						<a >
-							<img src="images/plant (4).png" alt=" " class="img-fluid" />
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container py-xl-5 py-lg-3 mt-5">
-			<h3 class="w3ls-title text-center font-weight-bold mb-5"><span class="font-weight-light">Tropical</span> Fruit <span class="font-weight-light">Plants</span></h3>
-			<div class="row pt-4">
-				<div class="col-md-3 gal-grid-wthree">
-					<div class="gallery-demo">
-						<a href="#gal4">
-							<img src="images/f1.jpeg" alt=" " class="img-fluid" />
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3 gal-grid-wthree my-md-0 my-4">
-					<div class="gallery-demo">
-						<a href="#gal5">
-							<img src="images/f2.jpg" alt=" " class="img-fluid" />
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3 gal-grid-wthree">
-					<div class="gallery-demo">
-						<a href="#gal6">
-							<img src="images/f3.jpeg" alt=" " class="img-fluid" />
-						</a>
-					</div>
-				</div>
-				<div class="col-md-3 gal-grid-wthree mt-md-0 mt-4">
-					<div class="gallery-demo">
-						<a href="#gal7">
-							<img src="images/f6.jpg" alt=" " class="img-fluid" />
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container py-xl-5 py-lg-3 mt-5">
+	<section class="portfolio py-5" id="tropical">
+		<div class="container py-xl-5 py-lg-3 mt-5" id="greenhouses">
 			<h3 class="w3ls-title text-center font-weight-bold mb-5"><span class="font-weight-light">Bring your</span> Greenhouse <span class="font-weight-light">dreams to reality</span></h3>
 			<div class="row pt-4">
 				<div class="col-md-3 gal-grid-wthree">
 					<div class="gallery-demo">
 						<a href="#gal1">
-							<img src="images/g1.png" alt=" " class="img-fluid" />
+							<img src="images/gh1.jpeg" alt=" " class="img-fluid" />
 						</a>
 					</div>
 				</div>
 				<div class="col-md-3 gal-grid-wthree my-md-0 my-4">
 					<div class="gallery-demo">
 						<a href="#gal2">
-							<img src="images/g2.png" alt=" " class="img-fluid" />
+							<img src="images/gh2.jpeg" alt=" " class="img-fluid" />
 						</a>
 					</div>
 				</div>
 				<div class="col-md-3 gal-grid-wthree">
 					<div class="gallery-demo">
 						<a href="#gal3">
-							<img src="images/g3.png" alt=" " class="img-fluid" />
+							<img src="images/gh3.jpeg" alt=" " class="img-fluid" />
 						</a>
 					</div>
 				</div>
 				<div class="col-md-3 gal-grid-wthree mt-md-0 mt-4">
 					<div class="gallery-demo">
 						<a href="#gal4">
-							<img src="images/g4.png" alt=" " class="img-fluid" />
+							<img src="images/gh4.jpeg" alt=" " class="img-fluid" />
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="container py-xl-5 py-lg-3 mt-5" id="fruits">
+			<h3 class="w3ls-title text-center font-weight-bold mb-5">Fruit <span class="font-weight-light">Plants</span></h3>
+			<div class="row pt-4">
+				<div class="col-md-3 gal-grid-wthree">
+					<div class="gallery-demo">
+						<a href="#gal5">
+							<img src="images/tf1.jpeg" alt=" " class="img-fluid" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 gal-grid-wthree my-md-0 my-4">
+					<div class="gallery-demo">
+						<a href="#gal6">
+							<img src="images/tf2.jpeg" alt=" " class="img-fluid" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 gal-grid-wthree">
+					<div class="gallery-demo">
+						<a href="#gal7">
+							<img src="images/tf3.jpeg" alt=" " class="img-fluid" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 gal-grid-wthree mt-md-0 mt-4">
+					<div class="gallery-demo">
+						<a href="#gal8">
+							<img src="images/tf4.jpeg" alt=" " class="img-fluid" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container py-xl-5 py-lg-3" id="indoor">
+			<h3 class="w3ls-title text-center font-weight-bold mb-5"> Indoor<span class="font-weight-light"> Plants</span></h3>
+			<div class="row pt-4">
+				<div class="col-md-3 gal-grid-wthree">
+					<div class="gallery-demo">
+						<a href="#gal9" class="justify-content-center">
+							<img src="images/indoorp1.jpeg" alt=" " class="img-fluid" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 gal-grid-wthree my-md-0 my-4">
+					<div class="gallery-demo">
+						<a href="#gal10" class="justify-content-center">
+							<img src="images/indoorp2.jpeg" alt=" " class="img-fluid" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 gal-grid-wthree">
+					<div class="gallery-demo">
+						<a  href="#gal11" class="justify-content-center">
+							<img src="images/indoorp3.jpeg" alt=" " class="img-fluid" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 gal-grid-wthree mt-md-0 mt-4">
+					<div class="gallery-demo">
+						<a href="#gal12">
+							<img src="images/indoorp4.jpeg" alt=" " class="img-fluid" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container py-xl-5 py-lg-3" id="terrarium">
+			<h3 class="w3ls-title text-center font-weight-bold mb-5"> Terrarium</h3>
+			<div class="row pt-4">
+				<div class="col-md-3 gal-grid-wthree">
+					<div class="gallery-demo">
+						<a href="#gal13" class="justify-content-center">
+							<img src="images/terra1.jpeg" alt=" " class="img-fluid" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 gal-grid-wthree my-md-0 my-4">
+					<div class="gallery-demo">
+						<a href="#gal14" class="justify-content-center">
+							<img src="images/terra2.jpeg" alt=" " class="img-fluid" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 gal-grid-wthree">
+					<div class="gallery-demo">
+						<a  href="#gal15" class="justify-content-center">
+							<img src="images/terra3.jpeg" alt=" " class="img-fluid" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 gal-grid-wthree mt-md-0 mt-4">
+					<div class="gallery-demo">
+						<a href="#gal16">
+							<img src="images/terra4.jpeg" alt=" " class="img-fluid" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container py-xl-5 py-lg-3" id="vivarium">
+			<h3 class="w3ls-title text-center font-weight-bold mb-5"> Vivariums & Paludarium</h3>
+			<div class="row pt-4">
+				<div class="col-md-3 gal-grid-wthree">
+					<div class="gallery-demo">
+						<a href="#gal17" class="justify-content-center">
+							<img src="images/viva1.jpeg" alt="Vivariums" class="img-fluid" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 gal-grid-wthree my-md-0 my-4">
+					<div class="gallery-demo">
+						<a href="#gal18" class="justify-content-center">
+							<img src="images/viva2.jpeg" alt="Vivariums" class="img-fluid" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 gal-grid-wthree">
+					<div class="gallery-demo">
+						<a  href="#gal19" class="justify-content-center">
+							<img src="images/viva3.jpeg" alt="Vivariums" class="img-fluid" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 gal-grid-wthree mt-md-0 mt-4">
+					<div class="gallery-demo">
+						<a href="#gal20">
+							<img src="images/viva4.jpeg" alt="Vivariums" class="img-fluid" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container py-xl-5 py-lg-3" id="aquarium">
+			<h3 class="w3ls-title text-center font-weight-bold mb-5">Aquarium</h3>
+			<div class="row pt-4">
+				<!-- <div class="col-md-3 gal-grid-wthree">
+					<div class="gallery-demo">
+						<a href="#gal21" class="justify-content-center">
+							<img src="images/aqua1.jpeg" alt="Vivariums" class="img-fluid" />
+						</a>
+					</div>
+				</div> -->
+				<div class="col-md-4 gal-grid-wthree my-md-0 my-4">
+					<div class="gallery-demo">
+						<a href="#gal22" class="justify-content-center">
+							<img src="images/aqua2.jpeg" alt="Vivariums" class="img-fluid" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 gal-grid-wthree">
+					<div class="gallery-demo">
+						<a  href="#gal23" class="justify-content-center">
+							<img src="images/aqua3.jpeg" alt="Vivariums" class="img-fluid" />
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 gal-grid-wthree mt-md-0 mt-4">
+					<div class="gallery-demo">
+						<a href="#gal24">
+							<img src="images/aqua4.jpeg" alt="Vivariums" class="img-fluid" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 	</section>
 	<!-- gallery model-->
+	<!-- //popup1 -->
 	<!-- popup-->
 	<div id="gal1" class="popup-effect animate">
 		<div class="popup">
-			<img src="images/g1.png" alt="Popup Image" class="img-fluid" />
-			<h4 class="p-mask">Greenhouses</h4>
+			<img src="images/gh1.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Greenhouse</h4>
 			<a class="close" href="#gallery">&times;</a>
 		</div>
 	</div>
-	<!-- //popup -->
 	<!-- popup-->
 	<div id="gal2" class="popup-effect animate">
 		<div class="popup">
-			<img src="images/g2.png" alt="Popup Image" class="img-fluid" />
+			<img src="images/gh2.jpeg" alt="Popup Image" class="img-fluid" />
 			<h4 class="p-mask">Greenhouse</h4>
 			<a class="close" href="#gallery">&times;</a>
 		</div>
@@ -725,90 +838,190 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- popup-->
 	<div id="gal3" class="popup-effect animate">
 		<div class="popup">
-			<img src="images/g3.png" alt="Popup Image" class="img-fluid" />
+			<img src="images/gh3.jpeg" alt="Popup Image" class="img-fluid" />
 			<h4 class="p-mask">Greenhouse</h4>
 			<a class="close" href="#gallery">&times;</a>
 		</div>
 	</div>
-	<!-- //popup3 -->
 	<!-- popup-->
 	<div id="gal4" class="popup-effect animate">
 		<div class="popup">
-			<img src="images/f1.jpeg" alt="Popup Image" class="img-fluid" />
-			<h4 class="p-mask">Grapes</h4>
+			<img src="images/gh4.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Greenhouses</h4>
 			<a class="close" href="#gallery">&times;</a>
 		</div>
 	</div>
+
+	<!-- popup-->
 	<div id="gal5" class="popup-effect animate">
 		<div class="popup">
-			<img src="images/f2.jpg" alt="Popup Image" class="img-fluid" />
-			<h4 class="p-mask">Mango</h4>
+			<img src="images/tf1.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Fruit Plant</h4>
 			<a class="close" href="#gallery">&times;</a>
 		</div>
 	</div>
 	<!-- //popup -->
-	<!-- popup-->
 	<div id="gal6" class="popup-effect animate">
 		<div class="popup">
-			<img src="images/f3.jpeg" alt="Popup Image" class="img-fluid" />
-			<h4 class="p-mask">Orange</h4>
+			<img src="images/tf2.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Fruit Plant</h4>
 			<a class="close" href="#gallery">&times;</a>
 		</div>
 	</div>
 	<!-- //popup -->
-	<!-- popup-->
 	<div id="gal7" class="popup-effect animate">
 		<div class="popup">
-			<img src="images/f6.jpg" alt="Popup Image" class="img-fluid" />
-			<h4 class="p-mask">Rambutan</h4>
+			<img src="images/tf3.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Fruit Plant</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<div id="gal8" class="popup-effect animate">
+		<div class="popup">
+			<img src="images/tf4.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Fruit Plant</h4>
 			<a class="close" href="#gallery">&times;</a>
 		</div>
 	</div>
 	<!-- //popup3 -->
 	<!-- popup-->
-	<div id="gal4" class="popup-effect animate">
+	<div id="gal9" class="popup-effect animate">
 		<div class="popup">
-			<img src="images/g4.png" alt="Popup Image" class="img-fluid" />
-			<h4 class="p-mask">Greenhouse</h4>
+			<img src="images/indoorp1.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Indoor Plants</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<div id="gal10" class="popup-effect animate">
+		<div class="popup">
+			<img src="images/indoorp2.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Indoor Plants</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<div id="gal11" class="popup-effect animate">
+		<div class="popup">
+			<img src="images/indoorp3.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Indoor Plants</h4>
 			<a class="close" href="#gallery">&times;</a>
 		</div>
 	</div>
 	<!-- //popup -->
 	<!-- popup-->
-	<!-- <div id="gal5" class="popup-effect animate">
+	<div id="gal12" class="popup-effect animate">
 		<div class="popup">
-			<img src="images/g5.png" alt="Popup Image" class="img-fluid" />
-			<h4 class="p-mask">Greenhouse</h4>
+			<img src="images/indoorp4.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Indoor Plants</h4>
 			<a class="close" href="#gallery">&times;</a>
 		</div>
-	</div> -->
+	</div>
+	<!-- //popup4 -->
+	<!-- popup-->
+	<div id="gal13" class="popup-effect animate">
+		<div class="popup">
+			<img src="images/terra1.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Terrarium</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<div id="gal14" class="popup-effect animate">
+		<div class="popup">
+			<img src="images/terra2.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Terrarium</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<div id="gal15" class="popup-effect animate">
+		<div class="popup">
+			<img src="images/terra3.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Terrarium</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
 	<!-- //popup -->
 	<!-- popup-->
-	<!-- <div id="gal6" class="popup-effect animate">
+	<div id="gal16" class="popup-effect animate">
 		<div class="popup">
-			<img src="images/g6.png" alt="Popup Image" class="img-fluid" />
-			<h4 class="p-mask">Greenhouse</h4>
+			<img src="images/terra4.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Terrarium</h4>
 			<a class="close" href="#gallery">&times;</a>
 		</div>
-	</div> -->
+	</div>
+	<!-- //popup5 -->
+	<!-- popup-->
+	<div id="gal17" class="popup-effect animate">
+		<div class="popup">
+			<img src="images/viva1.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Vivarium</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<div id="gal18" class="popup-effect animate">
+		<div class="popup">
+			<img src="images/viva2.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Vivarium</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<div id="gal19" class="popup-effect animate">
+		<div class="popup">
+			<img src="images/viva3.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Vivarium</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
 	<!-- //popup -->
 	<!-- popup-->
-	<!-- <div id="gal7" class="popup-effect animate">
+	<div id="gal20" class="popup-effect animate">
 		<div class="popup">
-			<img src="images/g7.png" alt="Popup Image" class="img-fluid" />
-			<h4 class="p-mask">Greenhouse</h4>
+			<img src="images/viva4.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Vivarium</h4>
 			<a class="close" href="#gallery">&times;</a>
 		</div>
-	</div> -->
+	</div>
 	<!-- //popup -->
 	<!-- popup-->
-	<!-- <div id="gal8" class="popup-effect animate">
+	<div id="gal21" class="popup-effect animate">
 		<div class="popup">
-			<img src="images/g8.png" alt="Popup Image" class="img-fluid" />
-			<h4 class="p-mask">Greenhouses=</h4>
+			<img src="images/aqua1.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Aquarium</h4>
 			<a class="close" href="#gallery">&times;</a>
 		</div>
-	</div> -->
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal22" class="popup-effect animate">
+		<div class="popup">
+			<img src="images/aqua2.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Aquarium</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal23" class="popup-effect animate">
+		<div class="popup">
+			<img src="images/aqua3.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Aquarium</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal24" class="popup-effect animate">
+		<div class="popup">
+			<img src="images/aqua4.jpeg" alt="Popup Image" class="img-fluid" />
+			<h4 class="p-mask">Aquarium</h4>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
 	<!-- //popup -->
 	<!-- popup-->
 	<!-- <div id="gal9" class="popup-effect animate">
@@ -995,10 +1208,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<a href="index.html">
 					<img class="img-fluid"  src="./images/brand_name.png" alt="AL HADIQAT AL KHADRA" />
 				</a>
-				<!-- <a class="d-flex" href="index.html">
-					<img class="img-fluid" style="max-height: 50px;" src="./images/brand_icon.png" alt="AL HADIQAT AL KHADRA" />
-					<img class="img-fluid pt-2" style="max-height: 60px; max-width: 200px;" src="./images/brand_logo.png" alt="AL HADIQAT AL KHADRA" />
-				</a> -->
 			</h2>
 			<!-- //logo -->
 			<!-- address -->

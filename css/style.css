@@ -150,7 +150,7 @@ footer .text-da {
 }
 
 .text-li {
-    color: #f8f9fa;
+    color: #ffffff;
 }
 
 .bg-li {
@@ -1066,6 +1066,17 @@ fieldset.contact-top1 {
     visibility: hidden;
     opacity: 0;
     z-index: 99;
+    overflow-y: scroll;
+    
+}
+
+.popup-effect {
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.popup-effect::-webkit-scrollbar  {
+    display: none;
 }
 
 .popup-effect:target {
